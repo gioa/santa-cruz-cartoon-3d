@@ -1,23 +1,23 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="zh-CN" data-location="pacifica">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#156775">
-  <meta name="description" content="Santa Cruz 的全新 3D 海岸钓鱼体验。沿着海岸漫步，驾驶木艇，感受波浪、鱼竿和鱼线的真实运动。">
-  <title>Santa Cruz · 潮汐之间 3D</title>
+  <meta name="description" content="Pacifica 的卡通 3D 海岸钓鱼体验。沿岸探索，与钓友交谈，感受抛投、鱼竿和鱼线的真实运动。">
+  <title>Pacifica · 潮汐之间 3D</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='11' fill='%231b393b'/%3E%3Cpath d='M7 19q6-7 13 0t13 0M7 26q6-7 13 0t13 0' fill='none' stroke='%23f3d9ab' stroke-width='2'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="./cruz3d-69a1f678ca.css">
   
 <link rel="modulepreload" href="./js/chunk-QOZ2FLEV.js"><link rel="modulepreload" href="./js/chunk-MMPC6EI2.js"><link rel="modulepreload" href="./js/chunk-KKP5Z5C3.js"><link rel="modulepreload" href="./js/chunk-T4WA4WRC.js"><link rel="modulepreload" href="./js/chunk-GYQRSOMQ.js"><link rel="modulepreload" href="./js/chunk-KB3BQHMQ.js"><link rel="modulepreload" href="./js/chunk-4C666HHU.js"></head>
 <body>
 <main id="app">
-  <div id="world" aria-label="Santa Cruz 三维海岸，拖动画面环顾，点按木码头行走"></div>
+  <div id="world" aria-label="Pacifica 三维海岸，拖动画面环顾，点按地面行走"></div>
   
   <div class="edge-shade" aria-hidden="true"></div>
   <header class="masthead">
-    <a class="wordmark" href="./santa-cruz-3d.html" aria-label="Santa Cruz 3D 首页"><svg viewBox="0 0 42 42" aria-hidden="true"><path d="M5 18q8-9 16 0t16 0M5 27q8-9 16 0t16 0"/></svg><span>SANTA CRUZ<small>潮 汐 之 间</small></span><em>3D</em></a>
-    <div class="place-label"><span>MONTEREY BAY, CALIFORNIA</span><small id="local-clock">太平洋海岸 · Santa Cruz</small></div>
+    <a class="wordmark" href="./pacifica-3d.html" aria-label="Pacifica 3D 首页"><svg viewBox="0 0 42 42" aria-hidden="true"><path d="M5 18q8-9 16 0t16 0M5 27q8-9 16 0t16 0"/></svg><span>PACIFICA<small>潮 汐 之 间</small></span><em>3D</em></a>
+    <div class="place-label"><span>SHARP PARK, CALIFORNIA</span><small id="local-clock">Pacifica · Sharp Park</small></div>
     <nav class="top-tools" aria-label="游戏工具">
       <button id="travel" class="icon-button" aria-label="选择 3D 钓场" title="钓场"><svg viewBox="0 0 24 24"><path d="m3 5 6-2 6 2 6-2v16l-6 2-6-2-6 2zM9 3v16M15 5v16"/></svg></button>
       <button id="chart" class="icon-button" aria-label="海图与沿岸地图" title="地图"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m15 7-2 6-6 4 2-6z"/></svg></button>
@@ -27,21 +27,21 @@
     </nav>
   </header>
   <section id="intro" class="intro">
-    <div class="eyebrow"><i></i> SANTA CRUZ · WHARF LIFE</div>
-    <h1>码头的一天。</h1>
-    <p class="intro-copy">阳光晒暖了木板，小艇正随浪轻摇。<br>带上鱼竿，看看今天的海。</p>
-    <button id="start" class="start-button" disabled><span>正在准备码头</span><b>↗</b></button>
-    <div class="intro-detail"><span>漫步木码头</span><i></i><span>驾艇出海</span><i></i><span>感受每一次咬钩</span></div>
+    <div class="eyebrow"><i></i> SHARP PARK · SURF LIFE</div>
+    <h1>黑沙与白浪。</h1>
+    <p class="intro-copy">海风掠过黑沙，浪线向旧栈桥舒展开。<br>找一段沙槽，听听竿尖的动静。</p>
+    <button id="start" class="start-button" disabled><span>正在准备海岸</span><b>↗</b></button>
+    <div class="intro-detail"><span>沿黑沙漫步</span><i></i><span>读懂浪线</span><i></i><span>感受每一次咬钩</span></div>
   </section>
-  <div id="intro-location" class="intro-location"><span>THE LITTLE WHARF</span><strong>Santa Cruz Wharf</strong><small>36°57′ N &nbsp; 122°01′ W</small></div>
+  <div id="intro-location" class="intro-location"><span>THE BLACK SAND SHORE</span><strong>Pacifica · Sharp Park</strong><small>37°38′ N &nbsp; 122°30′ W</small></div>
   <div id="loading-note" class="loading-note" role="status">正在准备海面与光照…</div>
   <section id="play-hud" hidden>
-    <div class="location-chip"><i></i><span id="location-name">Santa Cruz Wharf · 木码头</span><b id="environment-label">海风轻拂</b></div>
+    <div class="location-chip"><i></i><span id="location-name">Pacifica · 黑沙与旧栈桥</span><b id="environment-label">海风轻拂</b></div>
     <div id="context-message" class="context-message" role="status" aria-live="polite"></div>
     <div class="bottom-left">
-      <div id="phase-card" class="phase-card"><span id="phase-overline">THE SHORE IS YOURS</span><h2 id="phase-title">今天，去哪里钓鱼？</h2><p id="phase-copy">点按木码头行走，拖动画面环顾。</p></div>
+      <div id="phase-card" class="phase-card"><span id="phase-overline">THE SHORE IS YOURS</span><h2 id="phase-title">今天，去哪里钓鱼？</h2><p id="phase-copy">点按岸边行走，拖动画面环顾。</p></div>
       <div id="drag-control" class="drag-control" hidden><label for="drag"><svg viewBox="0 0 28 28"><circle cx="14" cy="14" r="9"/><circle cx="14" cy="14" r="3"/><path d="M14 5v6M23 14h-6M14 23v-6M5 14h6"/></svg><span>泄力<small>松一些 &nbsp; ↔ &nbsp; 紧一些</small></span></label><input id="drag" type="range" min="0.08" max="0.92" step="0.01" value="0.43" aria-label="调节鱼线泄力"></div>
-      <div class="secondary-actions"><button id="gear"><span>⌁</span> 钓具</button><button id="boarding"><span>⚓</span> 走向小艇</button><button id="inventory"><span>▱</span> 背包</button><button id="interact"><span>⌂</span> 小屋</button></div>
+      <div class="secondary-actions"><button id="gear"><span>⌁</span> 钓具</button><button id="boarding" hidden><span>⚓</span> 走向小艇</button><button id="inventory"><span>▱</span> 背包</button><button id="interact"><span>⌂</span> 小屋</button></div>
     </div>
     <div id="boat-controls" class="boat-controls" hidden><button id="steer-left" aria-label="小艇左转">↶</button><button id="motor" aria-label="按住小艇前进">前进<small>按住</small></button><button id="steer-right" aria-label="小艇右转">↷</button><button id="helm-options" aria-label="驾驶台与电推">驾驶台</button></div>
     <div class="bottom-right"><button id="camera" class="camera-button" aria-label="切换视角"><svg viewBox="0 0 24 24"><path d="M3 8h4l2-3h6l2 3h4v12H3z"/><circle cx="12" cy="14" r="4"/></svg><span>视角</span></button><button id="action" class="action-button" aria-label="按住蓄力，松开抛竿"><span class="rod-icon">⌁</span><strong id="action-title">抛竿</strong><small id="action-sub">按住 · 松开抛出</small></button></div>
